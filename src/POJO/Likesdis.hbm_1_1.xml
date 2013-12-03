@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 29, 2013 11:00:15 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="POJO.Likesdis" table="likesdis" catalog="bigco">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="vid" type="int">
+            <column name="vid" not-null="true" />
+        </property>
+        <property name="uid" type="int">
+            <column name="uid" not-null="true" />
+        </property>
+        <property name="likes" type="java.lang.Integer">
+            <column name="likes" />
+        </property>
+        <property name="dislikes" type="java.lang.Integer">
+            <column name="dislikes" />
+        </property>
+    </class>
+</hibernate-mapping>
