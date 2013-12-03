@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 29, 2013 11:00:15 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="POJO.Category" table="category" catalog="bigco">
+        <id name="categoryid" type="java.lang.Integer">
+            <column name="categoryid" />
+            <generator class="identity" />
+        </id>
+        <property name="categoryname" type="string">
+            <column name="categoryname" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

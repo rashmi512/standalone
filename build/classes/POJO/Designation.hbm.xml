@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 29, 2013 11:00:15 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="POJO.Designation" table="designation" catalog="bigco">
+        <id name="designationid" type="java.lang.Integer">
+            <column name="designationid" />
+            <generator class="identity" />
+        </id>
+        <property name="designationname" type="string">
+            <column name="designationname" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

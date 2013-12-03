@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="bigcostandalone.UploadController">
+  <children>
+    <Button fx:id="home" layoutX="406.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="30.0" prefWidth="87.0" text="Home" />
+    <Button fx:id="upload" layoutX="493.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoUpload" prefHeight="30.0" prefWidth="87.0" text="Upload" />
+    <Button fx:id="search" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoSearch" prefHeight="30.0" prefWidth="87.0" text="Search" />
+    <Button fx:id="forum" layoutX="667.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoForum" prefHeight="30.0" prefWidth="87.0" text="Forum" />
+    <Button fx:id="logout" layoutX="754.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="30.0" prefWidth="87.0" text="Logout" />
+    <Label fx:id="connStatus" layoutX="1010.0" layoutY="14.0" prefHeight="30.0" prefWidth="173.0" text="" />
+    <Button fx:id="chooseFile" layoutX="468.0" layoutY="165.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="30.0" prefWidth="173.0" text="Choose File" />
+    <Label layoutX="276.0" layoutY="165.0" prefHeight="30.0" prefWidth="122.0" text="Choose File :" />
+    <Label layoutX="276.0" layoutY="216.0" prefHeight="30.0" prefWidth="122.0" text="Title :" />
+    <TextField fx:id="title" layoutX="468.0" layoutY="216.0" prefHeight="30.0" prefWidth="435.0" />
+    <Label fx:id="fileName" layoutX="662.0" layoutY="165.0" prefHeight="30.0" prefWidth="240.0" text="" />
+    <Label layoutX="276.0" layoutY="270.0" prefHeight="30.0" prefWidth="122.0" text="Description :" />
+    <TextArea fx:id="desc" layoutX="468.0" layoutY="270.0" prefHeight="207.0" prefWidth="435.0" wrapText="true" />
+    <Button fx:id="submitForum" layoutX="830.0" layoutY="513.0" mnemonicParsing="false" onAction="#forumSubmit" prefHeight="30.0" prefWidth="72.0" text="Submit" />
+    <Label layoutX="406.0" layoutY="78.0" prefHeight="47.0" prefWidth="261.0" text="Upload File">
+      <font>
+        <Font size="30.0" />
+      </font>
+    </Label>
+    <Label fx:id="uploadStatus" layoutX="276.0" layoutY="513.0" prefHeight="30.0" prefWidth="523.0" text="" />
+  </children>
+</AnchorPane>

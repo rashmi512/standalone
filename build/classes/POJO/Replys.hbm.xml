@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 29, 2013 11:00:15 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="POJO.Replys" table="replys" catalog="bigco">
+        <id name="replyid" type="java.lang.Integer">
+            <column name="replyid" />
+            <generator class="identity" />
+        </id>
+        <property name="uid" type="int">
+            <column name="uid" not-null="true" />
+        </property>
+        <property name="reply" type="string">
+            <column name="reply" length="5000" not-null="true" />
+        </property>
+        <property name="ref" type="java.lang.Integer">
+            <column name="ref" />
+        </property>
+        <property name="ondate" type="string">
+            <column name="ondate" length="70" />
+        </property>
+    </class>
+</hibernate-mapping>
