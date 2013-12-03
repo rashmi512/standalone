@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/C:/Users/rashmireddy/Desktop/BigCoStandalone/src/SerializedClasses/ForumDetails.java</file>
-        <file>file:/C:/Users/rashmireddy/Desktop/BigCoStandalone/src/POJO/Forums.java</file>
-        <file>file:/C:/Users/rashmireddy/Desktop/BigCoStandalone/src/bigcostandalone/ForumController.java</file>
-        <file>file:/C:/Users/rashmireddy/Desktop/BigCoStandalone/src/Helper/ForumHelper.java</file>
-        <file>file:/C:/Users/rashmireddy/Desktop/BigCoStandalone/src/Helper/ConnectionStatus.java</file>
-        <file>file:/C:/Users/rashmireddy/Desktop/BigCoStandalone/src/Helper/CurrentUserHelper.java</file>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/B.Revanth/Documents/GitHub/standalone/src/SerializedClasses/CurForumClick.java</file>
+            <file>file:/C:/Users/B.Revanth/Documents/GitHub/standalone/src/SerializedClasses/CurVideoClick.java</file>
+        </group>
     </open-files>
 </project-private>
