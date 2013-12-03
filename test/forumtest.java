@@ -23,9 +23,9 @@ import org.hibernate.cfg.Configuration;
 
 /**
  *
- * @author B.Revanth
+ * @author Rajasekhar
  */
-public class ForumHelper {
+public class Forumtest {
 
     Session session = null;
 
