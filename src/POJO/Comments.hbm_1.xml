@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 29, 2013 11:00:15 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="POJO.Comments" table="comments" catalog="bigco">
+        <id name="commentsid" type="java.lang.Integer">
+            <column name="commentsid" />
+            <generator class="identity" />
+        </id>
+        <property name="vid" type="int">
+            <column name="vid" not-null="true" />
+        </property>
+        <property name="uid" type="int">
+            <column name="uid" not-null="true" />
+        </property>
+        <property name="posts" type="string">
+            <column name="posts" length="3000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
