@@ -1,0 +1,64 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+   
+
+}
+*.anchorpane
+{
+    -fx-background-color: 
+        #707070,
+        linear-gradient(#fcfcfc, #f3f3f3),
+        linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+        -fx-background-radius: 9,8,5,4,3;    
+}
+
+.Label
+{
+    -fx-font-family: "Andalus";
+    -fx-font-size: 16px;
+     -fx-font-weight: bold;
+     -fx-font-color: #cc0000;
+     -fx-padding: 3 11 3 11; 
+}
+.Title
+{
+    -fx-font-family: "Andalus";
+    -fx-font-size: 26px;
+     -fx-font-weight: bold;
+     -fx-font-color: #cc0000;
+     -fx-padding: 3 11 3 11; 
+}
+.Heading
+{
+    -fx-font-family: "Andalus";
+    -fx-font-size: 60px;
+     -fx-font-weight: bold;
+     color: #226fbe;
+     
+}
+input[type="text"]
+{
+   /*  -fx-height: 41px;
+    -fx-width: 243px;
+    */
+}
+.Button
+{
+     -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+   -fx-font-family: "Andalus";
+    -fx-font-size: 16px;
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+   
+    -fx-padding: 3 11 3 11; 
+}
