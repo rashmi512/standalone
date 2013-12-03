@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="bigcostandalone.ViewForumController">
+  <children>
+    <Button fx:id="home" layoutX="406.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="30.0" prefWidth="87.0" text="Home" />
+    <Button fx:id="upload" layoutX="493.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoUpload" prefHeight="30.0" prefWidth="87.0" text="Upload" />
+    <Button fx:id="search" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoSearch" prefHeight="30.0" prefWidth="87.0" text="Search" />
+    <Button fx:id="forum" layoutX="667.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoForum" prefHeight="30.0" prefWidth="87.0" text="Forum" />
+    <Button fx:id="logout" layoutX="754.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="30.0" prefWidth="87.0" text="Logout" />
+    <Label fx:id="connStatus" layoutX="1010.0" layoutY="14.0" prefHeight="30.0" prefWidth="173.0" text="" />
+    <Label layoutX="87.0" layoutY="61.0" prefHeight="17.0" prefWidth="69.0" text="Title :">
+      <textFill>
+        <Color blue="0.200" green="0.200" red="1.000" fx:id="x1" />
+      </textFill>
+    </Label>
+    <Label layoutX="87.0" layoutY="114.0" prefHeight="17.0" prefWidth="77.0" text="Description :" textFill="$x1" />
+    <ListView fx:id="replyList" layoutX="87.0" layoutY="251.0" prefHeight="280.0" prefWidth="937.0" />
+    <Label fx:id="posted" layoutX="87.0" layoutY="211.0" prefHeight="36.0" prefWidth="937.0" text="" />
+    <TextArea fx:id="forumTitle" layoutX="87.0" layoutY="84.0" prefHeight="30.0" prefWidth="937.0" wrapText="true" />
+    <TextArea fx:id="forumDesc" layoutX="87.0" layoutY="131.0" prefHeight="73.0" prefWidth="937.0" wrapText="true" />
+  </children>
+</AnchorPane>

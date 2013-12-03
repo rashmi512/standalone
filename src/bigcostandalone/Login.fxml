@@ -4,17 +4,41 @@
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="bigcostandalone.LoginController">
   <children>
-    <Label layoutX="706.0" layoutY="141.0" prefHeight="27.0" prefWidth="83.0" text="Username :" />
-    <Label layoutX="706.0" layoutY="182.0" prefHeight="27.0" prefWidth="83.0" text="Password :" />
+    <Label layoutX="706.0" layoutY="142.0" prefHeight="27.0" prefWidth="83.0" text="Username :">
+      <font>
+        <Font name="Andalus" size="16.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="706.0" layoutY="183.0" prefHeight="27.0" prefWidth="83.0" text="Password :" />
     <TextField fx:id="username" layoutX="789.0" layoutY="144.0" prefHeight="27.0" prefWidth="246.0" />
     <PasswordField fx:id="password" layoutX="789.0" layoutY="182.0" prefHeight="27.0" prefWidth="246.0" />
-    <Button fx:id="login" layoutX="977.0" layoutY="234.0" mnemonicParsing="false" onAction="#loginSubmit" text="Submit" />
-    <Button fx:id="reset" layoutX="884.0" layoutY="234.0" mnemonicParsing="false" onAction="#resetDetails" prefWidth="58.0" text="Reset" />
+    <Button fx:id="login" font="$x1" layoutX="977.0" layoutY="234.0" mnemonicParsing="false" onAction="#loginSubmit" text="Submit" />
+    <Button fx:id="reset" font="$x1" layoutX="859.0" layoutY="234.0" mnemonicParsing="false" onAction="#resetDetails" prefWidth="83.0" text="Reset" />
     <Label fx:id="connStatus" layoutX="1035.0" layoutY="14.0" prefHeight="27.0" prefWidth="151.0" text="" />
     <Label fx:id="loginStatus" layoutX="706.0" layoutY="319.0" prefHeight="28.0" prefWidth="340.0" text="" />
+    <Label layoutX="113.0" layoutY="99.0" prefHeight="166.0" prefWidth="362.0" text="BigCo." textFill="#404040">
+      <effect>
+        <Lighting>
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <contentInput>
+            <Glow />
+          </contentInput>
+          <light>
+            <javafx.scene.effect.Light.Distant />
+          </light>
+        </Lighting>
+      </effect>
+      <font>
+        <Font name="Andalus" size="100.0" />
+      </font>
+    </Label>
   </children>
 </AnchorPane>

@@ -26,5 +26,10 @@
     </Label>
     <TextArea fx:id="forumDesc" layoutX="437.0" layoutY="202.0" prefHeight="263.0" prefWidth="410.0" wrapText="true" />
     <Label fx:id="forumStatus" layoutX="296.0" layoutY="483.0" prefHeight="33.0" prefWidth="444.0" text="" />
+    <Hyperlink fx:id="viewList" layoutX="870.0" layoutY="65.0" onAction="#gotoForumList" prefHeight="33.0" prefWidth="296.0" text="Click Here to View Forum Topics">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Hyperlink>
   </children>
 </AnchorPane>

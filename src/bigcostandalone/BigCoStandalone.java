@@ -38,7 +38,7 @@ public class BigCoStandalone extends Application {
         stage.setTitle("BigCo.");
         stage.setMinWidth(MINIMUM_WINDOW_WIDTH);
         stage.setMinHeight(MINIMUM_WINDOW_HEIGHT);
-        gotoForum();
+        gotoLogin();
         stage.show();
     }
 
@@ -81,6 +81,38 @@ public class BigCoStandalone extends Application {
     public void gotoForum() {
         try {
             ForumController home = (ForumController) replaceSceneContent("Forum.fxml");
+            home.setApp(this);
+        } catch (Exception ex) {
+            Logger.getLogger(BigCoStandalone.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void gotoViewVideo() {
+        try {
+            ViewVideoController home = (ViewVideoController) replaceSceneContent("ViewVideo.fxml");
+            home.setApp(this);
+        } catch (Exception ex) {
+            Logger.getLogger(BigCoStandalone.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void gotoViewOffline() {
+        try {
+            ViewOfflineController home = (ViewOfflineController) replaceSceneContent("ViewOffline.fxml");
+            home.setApp(this);
+        } catch (Exception ex) {
+            Logger.getLogger(BigCoStandalone.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void gotoForumList() {
+        try {
+            ForumListController home = (ForumListController) replaceSceneContent("ForumList.fxml");
+            home.setApp(this);
+        } catch (Exception ex) {
+            Logger.getLogger(BigCoStandalone.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void gotoViewForum() {
+        try {
+            ViewForumController home = (ViewForumController) replaceSceneContent("ViewForum.fxml");
             home.setApp(this);
         } catch (Exception ex) {
             Logger.getLogger(BigCoStandalone.class.getName()).log(Level.SEVERE, null, ex);
