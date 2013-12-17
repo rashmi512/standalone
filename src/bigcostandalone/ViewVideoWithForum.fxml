@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="bigcostandalone.ViewVideoWithForumController">
+  <children>
+    <Button fx:id="home" layoutX="406.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="30.0" prefWidth="87.0" text="Home" />
+    <Button fx:id="upload" layoutX="493.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoUpload" prefHeight="30.0" prefWidth="87.0" text="Upload" />
+    <Button fx:id="search" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoSearch" prefHeight="30.0" prefWidth="87.0" text="Search" />
+    <Button fx:id="forum" layoutX="667.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoForum" prefHeight="30.0" prefWidth="87.0" text="Forum" />
+    <Button fx:id="logout" layoutX="754.0" layoutY="14.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="30.0" prefWidth="87.0" text="Logout" />
+    <Label fx:id="connStatus" layoutX="1010.0" layoutY="14.0" prefHeight="30.0" prefWidth="173.0" text="" />
+    <AnchorPane fx:id="viewvideo" layoutX="58.0" layoutY="98.0" prefHeight="295.0" prefWidth="530.0" />
+    <Label fx:id="titleDisplay" layoutX="58.0" layoutY="57.0" prefHeight="41.0" prefWidth="530.0" text="" />
+    <Hyperlink layoutX="113.0" layoutY="558.0" prefHeight="28.0" prefWidth="105.0" text="© B!G CO. 2013" textFill="BLACK" />
+    <Hyperlink layoutX="993.0" layoutY="558.0" prefWidth="72.0" text="Terms" />
+    <Hyperlink layoutX="938.0" layoutY="558.0" prefWidth="83.0" text="About" />
+    <TextArea fx:id="descDisplay" layoutX="58.0" layoutY="403.0" prefHeight="111.0" prefWidth="530.0" wrapText="true" />
+    <TabPane fx:id="commentsAndForum" layoutX="600.0" layoutY="57.0" prefHeight="457.0" prefWidth="569.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Comments">
+          <content>
+            <AnchorPane id="Content" fx:id="comments1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView fx:id="commentsDisplay" layoutX="21.0" layoutY="14.0" prefHeight="412.0" prefWidth="530.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Video Forum">
+          <content>
+            <AnchorPane id="Content" fx:id="videoForum" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <ListView fx:id="videoForumDisplay" layoutX="14.0" layoutY="14.0" prefHeight="405.0" prefWidth="541.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Post Question">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Label layoutX="58.0" layoutY="32.0" prefHeight="28.0" prefWidth="72.0" text="Forum Title :" />
+                <TextField fx:id="forumTitle" layoutX="140.0" layoutY="32.0" prefHeight="30.0" prefWidth="394.0" />
+                <Label layoutX="58.0" layoutY="75.0" prefHeight="22.0" prefWidth="72.0" text="Description :" />
+                <TextArea fx:id="forumDesc" layoutX="140.0" layoutY="75.0" prefHeight="203.0" prefWidth="394.0" wrapText="true" />
+                <Button fx:id="postForum" layoutX="462.0" layoutY="290.0" mnemonicParsing="false" onAction="#postForumDetails" prefHeight="28.0" prefWidth="72.0" text="Post" />
+                <Label fx:id="postStatus" layoutX="140.0" layoutY="342.0" prefHeight="30.0" prefWidth="394.0" text="" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
